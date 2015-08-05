@@ -131,10 +131,10 @@ describe( 'compute-median', function tests() {
 	});
 
 	it( 'should compute the distribution median when provided a number', function test() {
-		assert.strictEqual( median( 0.5 ), 0.588705 );
-		assert.strictEqual( median( 1  ), 1.177410 );
-		assert.strictEqual( median( 2  ), 2.354820 );
-		assert.strictEqual( median( 4  ), 4.709640 );
+		assert.closeTo( median( 0.5 ), 0.588705, 1e-5 );
+		assert.closeTo( median( 1  ), 1.177410, 1e-5 );
+		assert.closeTo( median( 2  ), 2.354820, 1e-5 );
+		assert.closeTo( median( 4  ), 4.709640, 1e-5 );
 	});
 
 	it( 'should compute the distribution median when provided a plain array', function test() {

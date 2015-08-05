@@ -6,8 +6,8 @@ Median
 
 The [median](https://en.wikipedia.org/wiki/median) for a [Rayleigh](https://en.wikipedia.org/wiki/Rayleigh_distribution) random variable is
 
-<div class="equation" align="center" data-raw-text="\operatorname{}\left[ X \right] = " data-equation="eq:median">
-	<img src="" alt="median for a Rayleigh distribution.">
+<div class="equation" align="center" data-raw-text="\operatorname{median}\left( X \right) = \sigma\sqrt{2\ln(2)}" data-equation="eq:median">
+	<img src="https://cdn.rawgit.com/distributions-io/rayleigh-median/b92d6f63cb71595edaafcabc61a180ee3dcc16e4/docs/img/eqn.svg" alt="Median for a Rayleigh distribution.">
 	<br>
 </div>
 
@@ -252,7 +252,7 @@ var sigma,
 // Plain arrays...
 sigma = new Array( 10 );
 for ( i = 0; i < sigma.length; i++ ) {
-	sigma[ i ] = i;
+	sigma[ i ] = i + 1;
 }
 out = median( sigma );
 
@@ -283,7 +283,7 @@ out = median( sigma, {
 // Typed arrays...
 sigma = new Float64Array( 10 );
 for ( i = 0; i < sigma.length; i++ ) {
-	sigma[ i ] = i;
+	sigma[ i ] = i + 1;
 }
 out = median( sigma );
 
