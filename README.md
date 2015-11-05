@@ -103,7 +103,10 @@ var sigma = [
 	{'x':[9,4]}
 ];
 
-var out = median( sigma, 'x|1', '|' );
+var out = median( sigma, {
+	'path': 'x|1',
+	'sep': '|'
+});
 /*
 	[
 		{'x':[9,~0.589]},
